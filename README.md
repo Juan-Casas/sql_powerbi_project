@@ -39,7 +39,7 @@ GROUP BY fecha
 ORDER BY fecha;
 ```
 
-💰 Ventas totales por día
+### 💰 Ventas totales por día
 ```
 SELECT DATE(fechaFactura) AS dia,
        ROUND(SUM(cantidad * precioUnitario), 2) AS total_ventas
@@ -48,7 +48,7 @@ GROUP BY dia
 ORDER BY dia;
 ```
 
-🧾 Facturación total por producto
+### 🧾 Facturación total por producto
 ```
 SELECT descripcion,
        ROUND(SUM(cantidad * precioUnitario), 2) AS total_facturado
